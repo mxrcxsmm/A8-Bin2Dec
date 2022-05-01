@@ -1,20 +1,20 @@
-function parrafos() {
-    var infonum = document.getElementById('infonum')
-    var infonum2 = document.getElementById('infonum2')
-    var numero = document.getElementById('numero').value
-    var calculando = document.getElementById('calculando')
-    calculando.innerHTML = parseInt(numero, 2);
-    var ultimodigito = numero.charAt(numero.length - 1)
-    if (numero == '') {
-        calculando.innerHTML = ''
+function texto() {
+    var number1 = document.getElementById('number1')
+    var number2 = document.getElementById('number2')
+    var numerobi = document.getElementById('numerobi').value
+    var procesando = document.getElementById('procesando')
+    procesando.innerHTML = parseInt(numerobi, 2);
+    var ultimodigito = numerobi.charAt(numerobi.length - 1)
+    if (numerobi == '') {
+        procesando.innerHTML = ''
     }
     if (ultimodigito == 0 || ultimodigito == 1) {
         infonum2.innerHTML = 'Here is your decimal'
         infonum.innerHTML = ''
     } else {
-        calculando.innerHTML = 'Waiting for a valid binary number...'
+        procesando.innerHTML = 'Waiting for a valid binary number...'
     }
-    if (ultimodigito >> 1 || ultimodigito >> 9999999) {
+    if (ultimodigito >> 1 || ultimodigito >> 9999) {
         infonum.innerHTML = 'You entered a non binary digit (please enter only 0 or 1)'
         infonum2.innerHTML = ''
     }

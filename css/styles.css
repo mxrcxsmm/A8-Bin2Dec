@@ -7,7 +7,7 @@ html {
 /* Redimensión de fuente utilizando rem */
 
 p {
-    font-size: 10px;
+    font-size: 17px;
     color: white;
     text-align: center;
 }
@@ -46,7 +46,7 @@ h6 {
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -106,6 +106,26 @@ body {
 
 /* Otras clases */
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.green {
+    color: rgb(172, 255, 47);
+    background-color: rgba(88, 165, 88, 0.267);
+}
+
+#number1 {
+    color: red;
+    font-size: 15px;
+}
+
+#number2 {
+    color: green;
+    font-size: 15px;
+}
+
 .color-submit {
     background-color: orange;
     border-radius: 7px;
@@ -150,7 +170,7 @@ footer {
     height: 10vh;
 }
 
-#calculando {
+#procesando {
     font-size: 20px;
 }
 
